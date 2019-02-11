@@ -4,7 +4,7 @@
       {
         "id" : 231,
         "title" : "2013 Dollarhide Estate Vineyard Cabernet Sauvignon",
-        "category" : "Dollarhide",
+        "category" : "dollarhide",
         "notes" : "This bright, ripe structured Cabernet Sauvignon has length and integrity, introduced by its deep and intense red and purple hues. Blackberry and cassis combine with dark mocha, roasted coffee, toasted oak and dark molasses for a rich and velvety fusion of aromas. Dark blackberry and plum bring a heady flavor, along with notes of cassis, dusted terroir, espresso, brown sugar and highly toasted barrel.",
         "ratings" : [
           { "name" : "Decanter", "value" : 91 },
@@ -16,7 +16,7 @@
       {
         "id" : 232,
         "title" : "2016 Dollarhide Estate Vineyard Sauvignon Blanc",
-        "category" : "Dollarhide",
+        "category" : "dollarhide",
         "notes" : "This bright, ripe structured Cabernet Sauvignon has length and integrity, introduced by its deep and intense red and purple hues. Blackberry and cassis combine with dark mocha, roasted coffee, toasted oak and dark molasses for a rich and velvety fusion of aromas. Dark blackberry and plum bring a heady flavor, along with notes of cassis, dusted terroir, espresso, brown sugar and highly toasted barrel.",
         "ratings" : [
           { "name" : "Decanter", "value" : 91 },
@@ -28,7 +28,7 @@
       {
         "id" : 233,
         "title" : "2014 Dollarhide Estate Vineyard Cabernet Sauvignon",
-        "category" : "Dollarhide",
+        "category" : "dollarhide",
         "notes" : "This bright, ripe structured Cabernet Sauvignon has length and integrity, introduced by its deep and intense red and purple hues. Blackberry and cassis combine with dark mocha, roasted coffee, toasted oak and dark molasses for a rich and velvety fusion of aromas. Dark blackberry and plum bring a heady flavor, along with notes of cassis, dusted terroir, espresso, brown sugar and highly toasted barrel.",
         "ratings" : [
           { "name" : "Decanter", "value" : 91 },

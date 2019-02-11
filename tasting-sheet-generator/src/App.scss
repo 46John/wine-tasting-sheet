@@ -1,6 +1,106 @@
 $lightGray : #f1f1f1;
 $medGray : #cccccc;
+$gray : #7d7d7d;
+$darkGray: #212121;
 $darkRed: #a22f2f;
+$green: #78a22f;
+h1,h2,h3,h4,h5{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: $darkGray;
+}
+body{
+  background: #f7f7f7;
+  color: $darkGray;
+}
+header{
+  background: $darkGray;
+  .logo-wrap{
+    padding: 10px 54px;
+    padding-bottom: 19px;
+    img{
+      max-width: 250px;
+    }
+  }
+}
+
+#footer{
+  background: $darkGray;
+  color: white;
+  padding-top: 10px;
+}
+.page-intro{
+  height: 300px;
+  width: 100%;
+  background: $darkGray;
+  h1{
+    color: white;
+    text-align: center;
+  }
+}
+.intro-text{
+  margin-top: -130px;
+  margin-bottom: 4rem;
+  background: #f7f7f7;
+  padding: 22px;
+  border-radius: 4px;
+  box-shadow: 0px -18px 30px -21px #536027;
+  h1{
+    font-weight: normal;
+    letter-spacing: 6px;
+  }
+}
+
+.main{
+  margin-bottom: 4rem;
+}
+
+.controls{
+  padding-top: 1rem;
+  &.top{
+    padding-top: 0;
+    padding-bottom: .5rem;
+  }
+  .gray-button{
+    border: 1px solid $gray;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 5px 16px;
+    background: transparent;
+    color: $gray;
+    display: inline-block;
+    transition: all 100ms ease-in-out;
+    &:hover{
+      background: darken($medGray, 10%);
+      color: white;
+      cursor: pointer;
+    }
+  }
+  .button-large{
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    padding: 5px 40px;
+    transition: all 100ms ease-in-out;
+  }
+  .next-button{
+    background: $green;
+    color: white;
+    &:hover{
+      background: darken($green, 10%);
+      cursor: pointer;
+    }
+  }
+  .back-button{
+    background: $darkGray;
+    color: white;
+    &:hover{
+      background: darken($darkGray, 10%);
+      cursor: pointer;
+    }
+  }
+}
+
+
 .available-wines{
   height: 400px;
   width: 100%;
@@ -66,5 +166,17 @@ $darkRed: #a22f2f;
         display: inline-block;
       }
     }
+  }
+}
+
+.sheetPreferences{
+  list-style: none;
+  padding: 0;
+  li{
+    padding: 10px;
+    background: white;
+    border: 1px solid $lightGray;
+    border-radius: 4px;
+    margin-bottom: 10px;
   }
 }
