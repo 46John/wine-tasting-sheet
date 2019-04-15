@@ -8,11 +8,25 @@ import './App.scss';
 
 class App extends Component {
     state = {
-        "allWines" : {},
-        "selectedWines" : [],
-        "selectedIds" : {},
-        "draggingNewItem" : false,
-        "currentView" : "sheet-preview"
+        allWines : {},
+        selectedWines : [],
+        selectedIds : {},
+        draggingNewItem : false,
+        currentView : "select-wines",
+        eventInfo : {
+            eventName : '',
+            eventDate : '',
+            eventTime : '',
+            eventVenue : '',
+            eventPresenter: ''
+        },
+        sheetIncludes: {
+            notes : false,
+            price : false,
+            images : false,
+            info : false,
+            ratings : false
+        }
     }
     componentDidMount(){
         let apiUrl = "/wines";
@@ -138,6 +152,20 @@ class App extends Component {
             currentView : viewName
         })
     };
+    onChangeUpdateEventInfo = (text, field) => {
+        let eventInfo = this.state.eventInfo;
+        eventInfo[field] = text;
+        this.setState({
+            eventInfo
+        })
+    }
+    toggleSheetInfo = (field) => {
+        let sheetIncludes = this.state.sheetIncludes;
+        sheetIncludes[field] = !sheetIncludes[field];
+        this.setState({
+            sheetIncludes
+        })
+    }
   render() {
     return (
       <div className="tsc">
@@ -155,14 +183,6 @@ class App extends Component {
 
             </div>
         </header>
-        <div className="container">
-            <div className="row">
-                <div className="col-12 intro-text">
-                    <h1 className="page-title">Tasting Sheet Creator</h1>
-                    <p>Using the list below, drag and drop the wines you would like to appear in your tasting sheet. You can rearrange you list of selected wines by dragging and dropping them into your preferred order.</p>
-                </div>
-            </div>
-        </div>
         <div className="main container">
             {this.state.currentView === 'select-wines' && (
                 <SelectWines
@@ -176,15 +196,27 @@ class App extends Component {
                 onDrop={this.onDrop}
                 dragReorderOver={this.dragReorderOver}
                 dragReorder={this.dragReorder}
-                removeFromList={this.removeFromList}
                 changeView={this.changeView}
             ></SelectWines>
             )}
             {this.state.currentView === 'sheet-preferences' && (
-                <SheetPreferences selectedWines={this.state.selectedWines} changeView={this.changeView}></SheetPreferences>
+                <SheetPreferences
+                    selectedWines={this.state.selectedWines}
+                    changeView={this.changeView}
+                    eventInfo={this.state.eventInfo}
+                    onChangeUpdateEventInfo={this.onChangeUpdateEventInfo}
+                    onChangePrice={this.onChangePrice}
+                    toggleSheetInfo={this.toggleSheetInfo}
+                    sheetIncludes={this.state.sheetIncludes}
+                ></SheetPreferences>
             )}
             {(this.state.currentView === 'sheet-preview' && (
-                <SheetPreview></SheetPreview>
+                <SheetPreview
+                    selectedWines={this.state.selectedWines}
+                    eventInfo={this.state.eventInfo}
+                    sheetIncludes={this.state.sheetIncludes}
+                    changeView={this.changeView}
+                ></SheetPreview>
             ))}
         </div>
           <Footer></Footer>

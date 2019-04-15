@@ -1,0 +1,73 @@
+.select-wrapper, .selected-wrapper{
+  overflow: hidden;
+  .select-header, .selected-header{
+    margin-bottom: .5rem;
+    h2{
+      vertical-align: top;
+      font-size: 2.4rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: rgba(33, 33, 33, 0.79);
+    }
+    .controls{
+      width: 100%;
+      max-width: 30%;
+      display: inline-block;
+      text-align: right;
+      vertical-align: top;
+      .dark-gray-button{
+        background: #a5a0a0;
+        color: white;
+        border: 0;
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: .8rem;
+        &:hover{
+          background: darken(#a5a0a0,10%)
+        }
+      }
+    }
+  }
+  .available-wines{
+    background: darken(#a5a0a0, 10%);
+    border: 1px solid darken($lightGray, 10%);
+    padding: 15px 8px;
+    h3{
+      color: white;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.selected-wrapper{
+  //.selected-header{
+  //  .controls{
+  //    .dark-gray-button{
+  //      background: #658a26;
+  //      &:hover{
+  //        background: darken(#658a26, 10%);
+  //      }
+  //    }
+  //  }
+  //}
+  .selectedWines{
+    background: #4e4e4e;
+    border: 1px solid #4e4e4e;
+    padding: 15px 8px;
+    .selected-instructions{
+      .text{
+        color: rgba(255, 255, 255, 0.64);
+        i{
+          font-size: 5rem;
+          margin-bottom: 1rem;
+        }
+        p{
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

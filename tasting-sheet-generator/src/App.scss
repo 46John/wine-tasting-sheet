@@ -4,6 +4,7 @@ $gray : #7d7d7d;
 $darkGray: #212121;
 $darkRed: #a22f2f;
 $green: #78a22f;
+
 h1,h2,h3,h4,h5{
   font-family: 'Roboto Condensed', sans-serif;
   color: $darkGray;
@@ -29,7 +30,6 @@ header{
   padding-top: 10px;
 }
 .page-intro{
-  height: 300px;
   width: 100%;
   background: $darkGray;
   h1{
@@ -122,9 +122,8 @@ header{
       background: white;
       margin-bottom: 10px;
       border-radius: 4px;
-      border: 1px solid $medGray;
       .remove{
-        background: $darkRed;
+        background: #79a440;
         color: white;
         padding: 10px;
         display: inline-block;
@@ -153,9 +152,8 @@ header{
       background: white;
       margin-bottom: 10px;
       border-radius: 4px;
-      border: 1px solid $medGray;
       .remove{
-        background: $darkRed;
+        background: #79a440;
         color: white;
         padding: 10px;
         display: inline-block;
@@ -180,3 +178,12 @@ header{
     margin-bottom: 10px;
   }
 }
+.view-instructions{
+  padding: 4rem 0;
+}
+.selected-wines-table{
+  background: $lightGray;
+  border: 1px solid #dee2e6;
+  margin-bottom: 4rem;
+}
+@import './sass-partials/select-list.scss';

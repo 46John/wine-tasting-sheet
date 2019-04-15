@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dd952f0-43ef-476d-b6be-241fc5aa9b23" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/tasting-sheet-generator/src/views/select-wines.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasting-sheet-generator/src/views/sheet-preferences.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasting-sheet-generator/src/views/sheet-preview.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json-server/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/json-server/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasting-sheet-generator/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/tasting-sheet-generator/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasting-sheet-generator/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/tasting-sheet-generator/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/json-server/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tasting-sheet-generator/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tasting-sheet-generator/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tasting-sheet-generator/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/tasting-sheet-generator/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tasting-sheet-generator/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/tasting-sheet-generator/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasting-sheet-generator/src/views/select-wines.js" beforeDir="false" afterPath="$PROJECT_DIR$/tasting-sheet-generator/src/views/select-wines.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasting-sheet-generator/src/views/sheet-preferences.js" beforeDir="false" afterPath="$PROJECT_DIR$/tasting-sheet-generator/src/views/sheet-preferences.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasting-sheet-generator/src/views/sheet-preview.js" beforeDir="false" afterPath="$PROJECT_DIR$/tasting-sheet-generator/src/views/sheet-preview.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +23,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+            <state relative-caret-position="972">
+              <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -34,42 +32,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="688">
-              <caret line="148" column="128" selection-start-line="148" selection-start-column="55" selection-end-line="148" selection-end-column="128" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-                <element signature="n#!!block;n#componentDidMount#0;n#App#0" />
-                <element signature="e#687#723#0" />
-                <element signature="e#770#945#0" />
-                <element signature="e#966#1663#0" />
-                <element signature="e#1700#1911#0" />
-                <element signature="e#1945#2330#0" />
-                <element signature="e#2371#2831#0" />
-                <element signature="e#2856#3564#0" />
-                <element signature="e#3592#4145#0" />
-                <element signature="e#4180#4355#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package-lock.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/package-lock.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12">
-              <caret line="45" column="7" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="select-wines.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/views/select-wines.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="6408">
+              <caret line="184" column="17" selection-start-line="184" selection-start-column="17" selection-end-line="184" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -77,8 +41,8 @@
       <file leaf-file-name="sheet-preview.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/views/sheet-preview.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="145">
+              <caret line="96" column="64" selection-start-line="96" selection-start-column="64" selection-end-line="96" selection-end-column="64" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -89,17 +53,8 @@
       <file leaf-file-name="sheet-preferences.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/views/sheet-preferences.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="111" column="56" selection-start-line="111" selection-start-column="56" selection-end-line="111" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/footer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+            <state relative-caret-position="612">
+              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -107,17 +62,17 @@
       <file leaf-file-name="App.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/App.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+            <state relative-caret-position="6768">
+              <caret line="188" column="32" selection-start-line="188" selection-start-column="32" selection-end-line="188" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list-wines.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/list-wines.js">
+      <file leaf-file-name="select-list.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/sass-partials/select-list.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+            <state relative-caret-position="2016">
+              <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -125,8 +80,38 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
+            <state relative-caret-position="72">
               <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="select-wines.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/views/select-wines.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1692">
+              <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/json-server/db.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1080">
+              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="936">
+              <caret line="26" column="198" selection-start-line="26" selection-start-column="198" selection-end-line="26" selection-end-column="198" />
             </state>
           </provider>
         </entry>
@@ -138,6 +123,8 @@
       <find>console</find>
       <find>listWines</find>
       <find>state</find>
+      <find>select-wra</find>
+      <find>select</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -150,14 +137,15 @@
         <option value="$PROJECT_DIR$/tasting-sheet-generator/src/list-wines.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/json-server/db.json" />
-        <option value="$PROJECT_DIR$/tasting-sheet-generator/public/index.html" />
         <option value="$PROJECT_DIR$/tasting-sheet-generator/src/footer.js" />
         <option value="$PROJECT_DIR$/tasting-sheet-generator/src/sheetPreferences.js" />
         <option value="$PROJECT_DIR$/tasting-sheet-generator/src/sheet-preferences.js" />
-        <option value="$PROJECT_DIR$/tasting-sheet-generator/src/App.scss" />
-        <option value="$PROJECT_DIR$/tasting-sheet-generator/src/views/sheet-preferences.js" />
-        <option value="$PROJECT_DIR$/tasting-sheet-generator/src/App.js" />
         <option value="$PROJECT_DIR$/tasting-sheet-generator/package.json" />
+        <option value="$PROJECT_DIR$/tasting-sheet-generator/public/index.html" />
+        <option value="$PROJECT_DIR$/tasting-sheet-generator/src/App.js" />
+        <option value="$PROJECT_DIR$/tasting-sheet-generator/src/views/sheet-preferences.js" />
+        <option value="$PROJECT_DIR$/tasting-sheet-generator/src/App.scss" />
+        <option value="$PROJECT_DIR$/tasting-sheet-generator/src/sass-partials/select-list.scss" />
         <option value="$PROJECT_DIR$/tasting-sheet-generator/src/views/select-wines.js" />
         <option value="$PROJECT_DIR$/tasting-sheet-generator/src/views/sheet-preview.js" />
       </list>
@@ -181,45 +169,65 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/tasting-sheet-generator/package.json" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="2560" />
-    <option name="height" value="1305" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="793" />
+    <option name="y" value="233" />
+    <option name="width" value="1438" />
+    <option name="height" value="815" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="wine-tasting-sheet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wine-tasting-sheet" type="462c0819:PsiDirectoryNode" />
+              <item name="TastingSheetGen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TastingSheetGen" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wine-tasting-sheet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wine-tasting-sheet" type="462c0819:PsiDirectoryNode" />
+              <item name="TastingSheetGen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TastingSheetGen" type="462c0819:PsiDirectoryNode" />
+              <item name="json-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TastingSheetGen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TastingSheetGen" type="462c0819:PsiDirectoryNode" />
               <item name="tasting-sheet-generator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wine-tasting-sheet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wine-tasting-sheet" type="462c0819:PsiDirectoryNode" />
+              <item name="TastingSheetGen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TastingSheetGen" type="462c0819:PsiDirectoryNode" />
               <item name="tasting-sheet-generator" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wine-tasting-sheet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wine-tasting-sheet" type="462c0819:PsiDirectoryNode" />
+              <item name="TastingSheetGen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TastingSheetGen" type="462c0819:PsiDirectoryNode" />
               <item name="tasting-sheet-generator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TastingSheetGen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TastingSheetGen" type="462c0819:PsiDirectoryNode" />
+              <item name="tasting-sheet-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sass-partials" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TastingSheetGen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TastingSheetGen" type="462c0819:PsiDirectoryNode" />
+              <item name="tasting-sheet-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -261,26 +269,28 @@
       <updated>1549650686736</updated>
       <workItem from="1549650688040" duration="17759000" />
       <workItem from="1549687748248" duration="17304000" />
+      <workItem from="1550095433255" duration="575000" />
+      <workItem from="1550173435597" duration="433000" />
+      <workItem from="1550262972061" duration="172000" />
+      <workItem from="1551721506249" duration="4552000" />
+      <workItem from="1551810735598" duration="1727000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35063000" />
+    <option name="totallyTimeSpent" value="66112000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="793" y="233" width="1438" height="815" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.124068156" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11079746" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3233831" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.28312412" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -298,7 +308,203 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/App.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6732">
+          <caret line="187" column="22" selection-start-line="187" selection-start-column="22" selection-end-line="187" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/sass-partials/select-list.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/views/select-wines.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="22" column="53" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json-server/db.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="26" column="198" selection-start-line="26" selection-start-column="198" selection-end-line="26" selection-end-column="198" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/views/sheet-preview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4932">
+          <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="138" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6408">
+          <caret line="184" column="17" selection-start-line="184" selection-start-column="17" selection-end-line="184" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/views/sheet-preferences.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/App.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6732">
+          <caret line="187" column="22" selection-start-line="187" selection-start-column="22" selection-end-line="187" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/sass-partials/select-list.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/views/select-wines.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="22" column="53" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json-server/db.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="26" column="198" selection-start-line="26" selection-start-column="198" selection-end-line="26" selection-end-column="198" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/views/sheet-preview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4824">
+          <caret line="134" column="30" selection-start-line="134" selection-start-column="30" selection-end-line="134" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6408">
+          <caret line="184" column="17" selection-start-line="184" selection-start-column="17" selection-end-line="184" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json" />
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/App.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/list-wines.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1271">
+          <caret line="37" column="18" lean-forward="true" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="1" column="36" lean-forward="true" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json-server/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
@@ -310,19 +516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1914">
           <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="n#!!block;n#componentDidMount#0;n#App#0" />
-            <element signature="e#687#723#0" />
-            <element signature="e#770#945#0" />
-            <element signature="e#966#1663#0" />
-            <element signature="e#1700#1911#0" />
-            <element signature="e#1945#2330#0" />
-            <element signature="e#2371#2831#0" />
-            <element signature="e#2856#3564#0" />
-            <element signature="e#3592#4145#0" />
-            <element signature="e#4180#4355#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -359,43 +552,18 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/json-server/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json-server/db.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-764">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="25" column="99" selection-start-line="25" selection-start-column="99" selection-end-line="25" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+        <state relative-caret-position="72">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/list-wines.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
+        <state relative-caret-position="1271">
           <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
         </state>
       </provider>
@@ -407,63 +575,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/App.scss">
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/yarn.lock" />
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+        <state relative-caret-position="36">
+          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/views/sheet-preferences.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="111" column="56" selection-start-line="111" selection-start-column="56" selection-end-line="111" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/yarn.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-318" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        <state relative-caret-position="972">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json-server/db.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="26" column="198" selection-start-line="26" selection-start-column="198" selection-end-line="26" selection-end-column="198" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="148" column="128" selection-start-line="148" selection-start-column="55" selection-end-line="148" selection-end-column="128" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="n#!!block;n#componentDidMount#0;n#App#0" />
-            <element signature="e#687#723#0" />
-            <element signature="e#770#945#0" />
-            <element signature="e#966#1663#0" />
-            <element signature="e#1700#1911#0" />
-            <element signature="e#1945#2330#0" />
-            <element signature="e#2371#2831#0" />
-            <element signature="e#2856#3564#0" />
-            <element signature="e#3592#4145#0" />
-            <element signature="e#4180#4355#0" />
-          </folding>
+        <state relative-caret-position="6408">
+          <caret line="184" column="17" selection-start-line="184" selection-start-column="17" selection-end-line="184" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/package-lock.json">
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/views/sheet-preferences.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="45" column="7" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+        <state relative-caret-position="612">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/App.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6768">
+          <caret line="188" column="32" selection-start-line="188" selection-start-column="32" selection-end-line="188" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/sass-partials/select-list.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2016">
+          <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/views/select-wines.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="1692">
+          <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -472,8 +651,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tasting-sheet-generator/src/views/sheet-preview.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="145">
+          <caret line="96" column="64" selection-start-line="96" selection-start-column="64" selection-end-line="96" selection-end-column="64" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
