@@ -48,7 +48,7 @@ class SelectWines extends Component{
                                 </div>
                                 <div className="selectedWines" onDragOver={(e) => onDragOver(e)} onDrop={(e)=>{onDrop(e)}}>
                                     {selectedWines.length === 0 &&(
-                                        <div class="selected-instructions d-flex justify-content-center align-items-center h-100">
+                                        <div className="selected-instructions d-flex justify-content-center align-items-center h-100">
                                             <div className="text text-center">
                                                 <i className="fa fa-plus-square"></i>
                                                 <p>Drag items from the left here</p>
