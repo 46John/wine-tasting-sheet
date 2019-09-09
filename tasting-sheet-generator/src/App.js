@@ -130,15 +130,15 @@ class App extends Component {
         }
     }
     componentDidMount(){
-        let apiUrl = "/wines";
-        fetch(apiUrl)
-            .then(response => response.json())
-            .then(response => {
-                this.setState({
-                    "allWines" : response
-                    //"selectedWines" : response.dollarhide
-                })
-            });
+        // let apiUrl = "/wines";
+        // fetch(apiUrl)
+        //     .then(response => response.json())
+        //     .then(response => {
+        //         this.setState({
+        //             "allWines" : response
+        //             //"selectedWines" : response.dollarhide
+        //         })
+        //     });
     };
     onDragOver = (ev) => {
         ev.preventDefault();

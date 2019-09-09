@@ -4,8 +4,13 @@
   "private": true,
   "dependencies": {
     "@react-pdf/renderer": "^1.5.3",
+<<<<<<< HEAD
     "bootstrap": "^4.2.1",
     "node-sass": "^4.11.0",
+=======
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.12.0",
+>>>>>>> 581e3281bbfc9e7766c3fe9b83b9bd04858830d8
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-scripts": "^2.1.8"
