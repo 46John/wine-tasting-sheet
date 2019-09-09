@@ -8,7 +8,108 @@ import './App.scss';
 
 class App extends Component {
     state = {
-        allWines : {},
+        allWines : {"dollarhide" :[
+            {
+              "id" : 231,
+              "title" : "2013 Dollarhide Estate Vineyard Cabernet Sauvignon",
+              "category" : "dollarhide",
+              "notes" : "This bright, ripe structured Cabernet Sauvignon has length and integrity, introduced by its deep and intense red and purple hues. Blackberry and cassis combine with dark mocha, roasted coffee, toasted oak and dark molasses for a rich and velvety fusion of aromas. Dark blackberry and plum bring a heady flavor, along with notes of cassis, dusted terroir, espresso, brown sugar and highly toasted barrel.",
+              "ratings" : [
+                { "name" : "Decanter", "value" : 91 },
+                { "name" : "Parker's Wine Advocate", "value" : 93 }
+              ],
+              "price" : 100.00,
+              "image" : "https://rendering.mcp.cimpress.com/v1/vp/preview?instructions_uri=http%3a%2f%2fservices.vistaprint.com%2fsales%2fdocuments%2fpreviewing%2foriondocsignature.aspx%3ftemplate%3d282501_AAY%26language_id%3d1%26hidebleed%3d1&width=450&height=1000&bgcolor=F0F2F3&quality=100&category=gp&merchant_metadata=AAY"
+            },
+            {
+              "id" : 232,
+              "title" : "2016 Dollarhide Estate Vineyard Sauvignon Blanc",
+              "category" : "dollarhide",
+              "notes" : "This bright, ripe structured Cabernet Sauvignon has length and integrity, introduced by its deep and intense red and purple hues. Blackberry and cassis combine with dark mocha, roasted coffee, toasted oak and dark molasses for a rich and velvety fusion of aromas. Dark blackberry and plum bring a heady flavor, along with notes of cassis, dusted terroir, espresso, brown sugar and highly toasted barrel.",
+              "ratings" : [
+                { "name" : "Decanter", "value" : 91 },
+                { "name" : "Parker's Wine Advocate", "value" : 93 }
+              ],
+              "price" : 100.00,
+              "image" : "https://rendering.mcp.cimpress.com/v1/vp/preview?instructions_uri=http%3a%2f%2fservices.vistaprint.com%2fsales%2fdocuments%2fpreviewing%2foriondocsignature.aspx%3ftemplate%3d282501_AAY%26language_id%3d1%26hidebleed%3d1&width=450&height=1000&bgcolor=F0F2F3&quality=100&category=gp&merchant_metadata=AAY"
+            },
+            {
+              "id" : 233,
+              "title" : "2014 Dollarhide Estate Vineyard Cabernet Sauvignon",
+              "category" : "dollarhide",
+              "notes" : "This bright, ripe structured Cabernet Sauvignon has length and integrity, introduced by its deep and intense red and purple hues. Blackberry and cassis combine with dark mocha, roasted coffee, toasted oak and dark molasses for a rich and velvety fusion of aromas. Dark blackberry and plum bring a heady flavor, along with notes of cassis, dusted terroir, espresso, brown sugar and highly toasted barrel.",
+              "ratings" : [
+                { "name" : "Decanter", "value" : 91 },
+                { "name" : "Parker's Wine Advocate", "value" : 93 }
+              ],
+              "price" : 100.00,
+              "image" : "https://rendering.mcp.cimpress.com/v1/vp/preview?instructions_uri=http%3a%2f%2fservices.vistaprint.com%2fsales%2fdocuments%2fpreviewing%2foriondocsignature.aspx%3ftemplate%3d282501_AAY%26language_id%3d1%26hidebleed%3d1&width=450&height=1000&bgcolor=F0F2F3&quality=100&category=gp&merchant_metadata=AAY"
+            }
+          ],
+          "estate" : [
+            {
+              "id" : 234,
+              "title" : "2016 Napa Valley Estate Sauvignon Blanc",
+              "category" : "estate",
+              "notes" : "This bright, ripe structured Cabernet Sauvignon has length and integrity, introduced by its deep and intense red and purple hues. Blackberry and cassis combine with dark mocha, roasted coffee, toasted oak and dark molasses for a rich and velvety fusion of aromas. Dark blackberry and plum bring a heady flavor, along with notes of cassis, dusted terroir, espresso, brown sugar and highly toasted barrel.",
+              "ratings" : [
+                { "name" : "Decanter", "value" : 91 },
+                { "name" : "Parker's Wine Advocate", "value" : 93 }
+              ],
+              "price" : 100.00,
+              "image" : "https://rendering.mcp.cimpress.com/v1/vp/preview?instructions_uri=http%3a%2f%2fservices.vistaprint.com%2fsales%2fdocuments%2fpreviewing%2foriondocsignature.aspx%3ftemplate%3d282501_AAY%26language_id%3d1%26hidebleed%3d1&width=450&height=1000&bgcolor=F0F2F3&quality=100&category=gp&merchant_metadata=AAY"
+            },
+            {
+              "id" : 235,
+              "title" : "2015 Napa Valley Estate Moscato",
+              "category" : "estate",
+              "notes" : "This bright, ripe structured Cabernet Sauvignon has length and integrity, introduced by its deep and intense red and purple hues. Blackberry and cassis combine with dark mocha, roasted coffee, toasted oak and dark molasses for a rich and velvety fusion of aromas. Dark blackberry and plum bring a heady flavor, along with notes of cassis, dusted terroir, espresso, brown sugar and highly toasted barrel.",
+              "ratings" : [
+                { "name" : "Decanter", "value" : 91 },
+                { "name" : "Parker's Wine Advocate", "value" : 93 }
+              ],
+              "price" : 100.00,
+              "image" : "https://rendering.mcp.cimpress.com/v1/vp/preview?instructions_uri=http%3a%2f%2fservices.vistaprint.com%2fsales%2fdocuments%2fpreviewing%2foriondocsignature.aspx%3ftemplate%3d282501_AAY%26language_id%3d1%26hidebleed%3d1&width=450&height=1000&bgcolor=F0F2F3&quality=100&category=gp&merchant_metadata=AAY"
+            },
+            {
+              "id" : 236,
+              "title" : "2014 Napa Valley Estate Cabernet Sauvignon",
+              "category" : "estate",
+              "notes" : "This bright, ripe structured Cabernet Sauvignon has length and integrity, introduced by its deep and intense red and purple hues. Blackberry and cassis combine with dark mocha, roasted coffee, toasted oak and dark molasses for a rich and velvety fusion of aromas. Dark blackberry and plum bring a heady flavor, along with notes of cassis, dusted terroir, espresso, brown sugar and highly toasted barrel.",
+              "ratings" : [
+                { "name" : "Decanter", "value" : 91 },
+                { "name" : "Parker's Wine Advocate", "value" : 93 }
+              ],
+              "price" : 100.00,
+              "image" : "https://rendering.mcp.cimpress.com/v1/vp/preview?instructions_uri=http%3a%2f%2fservices.vistaprint.com%2fsales%2fdocuments%2fpreviewing%2foriondocsignature.aspx%3ftemplate%3d282501_AAY%26language_id%3d1%26hidebleed%3d1&width=450&height=1000&bgcolor=F0F2F3&quality=100&category=gp&merchant_metadata=AAY"
+            }
+          ],
+          "meritage" : [
+            {
+              "id" : 237,
+              "title" : "2013 Napa Valley Estate Élu",
+              "category" : "meritage",
+              "notes" : "This bright, ripe structured Cabernet Sauvignon has length and integrity, introduced by its deep and intense red and purple hues. Blackberry and cassis combine with dark mocha, roasted coffee, toasted oak and dark molasses for a rich and velvety fusion of aromas. Dark blackberry and plum bring a heady flavor, along with notes of cassis, dusted terroir, espresso, brown sugar and highly toasted barrel.",
+              "ratings" : [
+                { "name" : "Decanter", "value" : 91 },
+                { "name" : "Parker's Wine Advocate", "value" : 93 }
+              ],
+              "price" : 100.00,
+              "image" : "https://rendering.mcp.cimpress.com/v1/vp/preview?instructions_uri=http%3a%2f%2fservices.vistaprint.com%2fsales%2fdocuments%2fpreviewing%2foriondocsignature.aspx%3ftemplate%3d282501_AAY%26language_id%3d1%26hidebleed%3d1&width=450&height=1000&bgcolor=F0F2F3&quality=100&category=gp&merchant_metadata=AAY"
+            },
+            {
+              "id" : 238,
+              "title" : "2016 Napa Valley Estate Virtú",
+              "category" : "meritage",
+              "notes" : "This bright, ripe structured Cabernet Sauvignon has length and integrity, introduced by its deep and intense red and purple hues. Blackberry and cassis combine with dark mocha, roasted coffee, toasted oak and dark molasses for a rich and velvety fusion of aromas. Dark blackberry and plum bring a heady flavor, along with notes of cassis, dusted terroir, espresso, brown sugar and highly toasted barrel.",
+              "ratings" : [
+                { "name" : "Decanter", "value" : 91 },
+                { "name" : "Parker's Wine Advocate", "value" : 93 }
+              ],
+              "price" : 100.00,
+              "image" : "https://rendering.mcp.cimpress.com/v1/vp/preview?instructions_uri=http%3a%2f%2fservices.vistaprint.com%2fsales%2fdocuments%2fpreviewing%2foriondocsignature.aspx%3ftemplate%3d282501_AAY%26language_id%3d1%26hidebleed%3d1&width=450&height=1000&bgcolor=F0F2F3&quality=100&category=gp&merchant_metadata=AAY"
+            }
+          ]},
         selectedWines : [],
         selectedIds : {},
         draggingNewItem : false,
@@ -35,6 +136,7 @@ class App extends Component {
             .then(response => {
                 this.setState({
                     "allWines" : response
+                    //"selectedWines" : response.dollarhide
                 })
             });
     };
@@ -174,7 +276,7 @@ class App extends Component {
                 <div className="row">
                     <div className="col-12 text-center">
                         <div className="logo-wrap d-inline-block">
-                            <img className="logo" src="https://www.stsupery.com/wp-content/uploads/2018/03/St.Supery_Logo-SM.png" alt="St.Supery Logo"/>
+                            <h1>DEMO HEADER (will be replaced with site header)</h1>
                         </div>
                     </div>
                 </div>
