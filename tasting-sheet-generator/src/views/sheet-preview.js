@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Page, Text, View, Document, StyleSheet, PDFViewer, Image, Font} from '@react-pdf/renderer';
+import { Page, Text, View, Document, StyleSheet, PDFDownloadLink, PDFViewer, Image, Font} from '@react-pdf/renderer';
 
 class SheetPreview extends Component{
     shouldComponentUpdate(){
@@ -13,15 +13,22 @@ class SheetPreview extends Component{
             changeView
         } = this.props;
 
-        // Font.register(
-        //     'http://localhost:3000/fonts/RobotoCondensed-Regular.ttf',
-        //     {family:'Roboto Condensed'}
-        // );
+        Font.register({
+            family:'Roboto Condensed', src: 'http://localhost:3000/fonts/RobotoCondensed-Regular.ttf'
+        });
+        Font.register({
+            family:'EB Garamond Bold', src: '/fonts/ebgaramond-bold-webfont.ttf', fontWeight: 'bold'
+        });
+
+        Font.register({
+            family:'EB Garamond', src: 'http://fonts.gstatic.com/s/ebgaramond/v7/kYZt1bJ8UsGAPRGnkXPeFZ0EAVxt0G0biEntp43Qt6E.ttf'
+        });
 
         const tastingSheet = (
             <Document>
                 <Page size="A4" style={{
-                    padding: '10pt 10pt 50pt 10pt'
+                    padding: '10pt 10pt 50pt 10pt',
+                    fontFamily: 'EB Garamond'
                 }}
                 wrap={true}
                 >
@@ -73,45 +80,56 @@ class SheetPreview extends Component{
                             <View style={{
                                 width: "100%",
                                 flex: '0 1',
-                                padding: '10pt 0'
+                                padding: '10pt 0',
+                                marginBottom: 16
                             }}>
-                                <Text style={{fontSize:14, textAlign: 'left'}}>St. Supéry Estate Vineyards & Winery is a sustainably farmed, estate winery in Napa Valley, California, with more than 500 acres of certified Napa Green vineyards. All of the grapes for St. Supéry Estates' wine portfolio, including the highly regarded Napa Valley Estate Sauvignon Blanc and Dollarhide and Rutherford vineyard designate Cabernet Sauvignon, are grown in two estate vineyards.</Text>
+                                <Text style={{fontSize:12, textAlign: 'left'}}>St. Supéry Estate Vineyards & Winery is a sustainably farmed, estate winery in Napa Valley, California, with more than 500 acres of certified Napa Green vineyards. All of the grapes for St. Supéry Estates' wine portfolio, including the highly regarded Napa Valley Estate Sauvignon Blanc and Dollarhide and Rutherford vineyard designate Cabernet Sauvignon, are grown in two estate vineyards.</Text>
                             </View>
                         )}
                     </View>
-                    <Text style={{width: '100%', borderBottom: '1 solid #bdbdbd', marginBottom: 10}} ></Text>
                     <View>
                     {selectedWines.map((wine, index) => (
-                        <View key={index} style={{width: '100%'}} wrap={false}>
-                            <View style={{width: '100%', marginBottom: '10pt'}}>
-                                <Text style={{fontSize: 16}}>{wine.title}{sheetIncludes.price ? " - $" + wine.price : ""}</Text>
-                            </View>
+                        <View key={index} style={{}} wrap={false}>
+                            
                             <View style={{
                                 width: '100%',
+                                maxWidth: '100%',
                                 display: 'flex',
-                                flexDirection: 'row'
+                                flexDirection: 'row',
+                                marginBottom: 16
                             }}
+                            
                             >
                                 {sheetIncludes.images && (
-                                    <Image src="img/wine-label.jpg" style={{height: 97, flex: '1', alignSelf: 'auto'}} />
+                                    <View style={{display: 'flex'}}>
+                                        <Image src="img/wine-label.jpg" style={{height: 60, width: 90,  alignSelf: 'center'}} />
+                                    </View>
                                 )}
-                                <View style={{flex: '3', flexDirection: "column", alignItems: "stretch"}}>
-                                    {sheetIncludes.notes && (
-                                        <View style={{fontSize: "14pt", padding: "0 0 0 10"}}>
-                                            <Text style={{fontWeight: 'bold', marginBottom: '5pt'}}>Winemaker's Notes:</Text>
-                                            <Text >{wine.notes}</Text>
-                                        </View>
+                                <View style={{display: 'flex', flexDirection: "column", flex: 1, paddingLeft: 10}} >
+                                    <View style={{width: '100%', marginBottom: '5pt'}}>
+                                        <Text style={{fontSize: 16, fontWeight: 'bold', fontFamily: 'Roboto Condensed'}}>{wine.title}{sheetIncludes.price ? " - $" + wine.price : ""} (SRP)</Text>
+                                    </View>
+                                        {sheetIncludes.notes && (
+                                            <View style={{fontSize: "14pt", marginBottom: 10}}>
+                                                <Text style={{fontWeight: '700', marginBottom: '2pt', fontFamily: 'EB Garamond Bold', fontSize: 12}}>Winemaker's Notes:</Text>
+                                                <Text >{wine.notes}</Text>
+                                            </View>
 
-                                    )}
+                                        )}
+                                    <View style={{display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', marginBottom: 10}}>
+                                        {sheetIncludes.ratings && (
+                                                                                
+                                            wine.ratings.map((rating, index) => <View style={{display: "flex", flexDirection: "row", flexWrap: 'wrap', marginRight: 10}} key={index}>
+                                                <Text style={{width: '40pt', fontSize: 12, backgroundColor: '#962b2b', color: 'white', textAlign: 'center'}}>{rating.value}</Text>
+                                                <Text style={{fontSize: 12, width: 'auto', borderWidth: 1, paddingLeft: 10, paddingRight: 10}}>{rating.name}</Text>
+                                            </View>)
+
+                                        )}
+                                    </View>
+                                    
+
                                 </View>
                             </View>
-                            {sheetIncludes.ratings && (
-                                <View style={{margin: '10pt 0', display: "flex", flexDirection: "row", width: '100%', justifyContent: "flex-start", fontSize: "12pt"}}>
-                                    <Text style={{flex: 1}}>Ratings:</Text>
-                                    {wine.ratings.map((rating, index) => <Text style={{flex: 1}} key={index}>{rating.value} - {rating.name}</Text>)}
-                                </View>
-                            )}
-                            <Text style={{width: '100%', borderBottom: '1 solid #bdbdbd', marginBottom: 10}}></Text>
                         </View>
                     ))}
                     </View>
@@ -135,6 +153,9 @@ class SheetPreview extends Component{
                     <div className="view-instructions">
                         <h2>Tasting Sheet Preview</h2>
                         <p>Below is a preview of your tasting sheet. If you need to make any changes, click the back button.</p>
+                        <PDFDownloadLink document={tastingSheet} fileName="StSupery-Tasting-Sheet.pdf" className="d-block d-lg-none">
+                            {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Download now!')}
+                        </PDFDownloadLink>
                         <div className="controls">
                             <button className="back-button button-large" onClick={() => changeView('sheet-preferences')}>Back</button>
                         </div>
@@ -143,9 +164,11 @@ class SheetPreview extends Component{
                 <div>
 
                 </div>
+                <div className="col-12 d-none d-lg-flex">
                 <PDFViewer width="100%" height="800px">
                     {tastingSheet}
                 </PDFViewer>
+                </div>
             </div>
         )
     }

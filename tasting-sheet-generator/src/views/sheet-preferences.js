@@ -21,7 +21,7 @@ class SheetPreferences extends Component{
                     </div>
                 </div>
                 <div className="col-12">
-                    <table className="table selected-wines-table">
+                    <table className="table selected-wines-table table-responsive-sm">
                         <thead>
                         <tr>
                             <th scope="col">Wine</th>
@@ -46,7 +46,7 @@ class SheetPreferences extends Component{
                     <div className="row">
                         <div className="container">
                             <div className="row">
-                                <div className="col-4">
+                                <div className="col-12 col-lg-4 mb-4 mb-lg-0">
                                     <h4>Sheet Preferences</h4>
                                     <p>Select the items that you want to appear on your tasting sheet:</p>
                                     <div className="sheetPreferences">
@@ -115,7 +115,7 @@ class SheetPreferences extends Component{
                                         </li>
                                     </div>
                                 </div>
-                                <div className="col-8">
+                                <div className="col-12 col-lg-8">
                                     <h4>Event Information (optional)</h4>
                                     <div className="form-group">
                                         <label htmlFor="eventName">Event Name</label>

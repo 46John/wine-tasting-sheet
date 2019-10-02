@@ -4,30 +4,11 @@
     margin-bottom: .5rem;
     h2{
       vertical-align: top;
-      font-size: 2.4rem;
+      font-size: 1.4rem;
       font-weight: bold;
       letter-spacing: 1px;
       color: rgba(33, 33, 33, 0.79);
-    }
-    .controls{
-      width: 100%;
-      max-width: 30%;
-      display: inline-block;
-      text-align: right;
-      vertical-align: top;
-      .dark-gray-button{
-        background: #a5a0a0;
-        color: white;
-        border: 0;
-        padding: 10px 20px;
-        border-radius: 4px;
-        font-weight: bold;
-        cursor: pointer;
-        font-size: .8rem;
-        &:hover{
-          background: darken(#a5a0a0,10%)
-        }
-      }
+    
     }
   }
   .available-wines{
@@ -40,7 +21,27 @@
     }
   }
 }
-
+.controls{
+  width: 100%;
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  padding-top: 1rem;
+  .dark-gray-button{
+    background: #a5a0a0;
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    font-size: .8rem;
+    &:hover{
+      background: darken(#a5a0a0,10%)
+    }
+  }
+}
 .selected-wrapper{
   //.selected-header{
   //  .controls{

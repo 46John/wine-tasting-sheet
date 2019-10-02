@@ -115,18 +115,18 @@ class App extends Component {
         draggingNewItem : false,
         currentView : "select-wines",
         eventInfo : {
-            eventName : '',
-            eventDate : '',
-            eventTime : '',
-            eventVenue : '',
-            eventPresenter: ''
+            eventName : "",
+            eventDate : "",
+            eventTime : "",
+            eventVenue : "",
+            eventPresenter: ""
         },
         sheetIncludes: {
-            notes : false,
-            price : false,
-            images : false,
-            info : false,
-            ratings : false
+            notes : true,
+            price : true,
+            images : true,
+            info : true,
+            ratings : true
         }
     }
     componentDidMount(){
@@ -139,6 +139,15 @@ class App extends Component {
         //             //"selectedWines" : response.dollarhide
         //         })
         //     });
+        
+        //Set total number of wines in wine list 
+        let totalNumWines = 0;
+        Object.keys(this.state.allWines).forEach((value, index) => {
+          totalNumWines += this.state.allWines[value].length;
+        });
+        this.setState({
+          totalNumWines
+      })
     };
     onDragOver = (ev) => {
         ev.preventDefault();
@@ -190,7 +199,7 @@ class App extends Component {
         let selectedWines = this.state.selectedWines.filter(wine => wine.id !== id);
         let allWines = this.state.allWines;
         let selectedIds = this.state.selectedIds;
-        delete selectedIds[id];
+        selectedIds[id] = id;
         allWines[category] = allWines[category].concat(this.state.selectedWines[index]);
 
         this.setState({
@@ -199,6 +208,20 @@ class App extends Component {
             selectedIds
         })
     };
+    addToList = (index, id, category) =>{
+      const cat = category.toLowerCase();
+      let selectedWines = this.state.selectedWines.concat(this.state.allWines[cat].filter((wine) => { return wine.id === id}));
+      let allWines = this.state.allWines;
+      let selectedIds = this.state.selectedIds;
+      delete selectedIds[id];
+      allWines[cat] = this.state.allWines[cat].filter((wine) => wine.id !== id);
+
+      this.setState({
+          selectedWines,
+          allWines,
+          selectedIds
+      })
+  };
     addAllWines = () => {
         const allWines = this.state.allWines;
 
@@ -299,6 +322,8 @@ class App extends Component {
                 dragReorderOver={this.dragReorderOver}
                 dragReorder={this.dragReorder}
                 changeView={this.changeView}
+                addToList={this.addToList}
+                totalNumWines={this.state.totalNumWines}
             ></SelectWines>
             )}
             {this.state.currentView === 'sheet-preferences' && (
