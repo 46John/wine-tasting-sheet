@@ -21,7 +21,7 @@ class SheetPreview extends Component{
         });
 
         Font.register({
-            family:'EB Garamond', src: 'http://fonts.gstatic.com/s/ebgaramond/v7/kYZt1bJ8UsGAPRGnkXPeFZ0EAVxt0G0biEntp43Qt6E.ttf'
+            family:'EB Garamond', src: '//fonts.gstatic.com/s/ebgaramond/v7/kYZt1bJ8UsGAPRGnkXPeFZ0EAVxt0G0biEntp43Qt6E.ttf'
         });
 
         const tastingSheet = (
