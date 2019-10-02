@@ -21,11 +21,11 @@ class SheetPreferences extends Component{
                     </div>
                 </div>
                 <div className="col-12">
-                    <table className="table selected-wines-table table-responsive-sm">
+                    <table className="table selected-wines-table table-responsive-lg">
                         <thead>
                         <tr>
                             <th scope="col">Wine</th>
-                            <th scope="col">Rating(s)</th>
+                            <th scope="col" className="d-none d-lg-block">Rating(s)</th>
                             <th scope="col">Price (SRP)</th>
                         </tr>
                         </thead>
@@ -33,7 +33,7 @@ class SheetPreferences extends Component{
                         {selectedWines.map((wine, index) => (
                             <tr key={index}>
                                 <td>{wine.title}</td>
-                                <td>{wine.ratings.map((rating, index) => (
+                                <td className="d-none d-lg-block">{wine.ratings.map((rating, index) => (
                                     <span key={index}>{rating.value} - {rating.name} </span>
                                 ))}</td>
                                 <td>$ <input type="number" placeholder={wine.price} value={wine.price} onChange={(e) => onChangePrice(e,index)}/></td>

@@ -38,7 +38,7 @@ class SelectWines extends Component{
                                 
                             </div>
                             {selectedWines.length !== totalNumWines && (
-                                <div className="controls text-right">
+                                <div className="select-controls text-right">
                                     <button className="dark-gray-button d-inline-block" onClick={addAllWines}> Add All</button>
                                 </div>
                             )}
@@ -69,7 +69,7 @@ class SelectWines extends Component{
                                     </ul>
                                 </div>
                                 {selectedWines.length > 0 &&(
-                                    <div className="controls text-right">
+                                    <div className="select-controls text-right">
                                         <button className="dark-gray-button d-inline-block" onClick={removeAllWines}>Remove All</button>
                                     </div>
                                 )}
@@ -79,7 +79,6 @@ class SelectWines extends Component{
                 </div>
                 <div className="controls text-right col-12">
                     {selectedWines.length > 0 && (
-                        <div className="container">
                             <div className="row">
                                 <div className="col-6 text-left">
 
@@ -88,7 +87,6 @@ class SelectWines extends Component{
                                     <button className="button-large next-button d-inline-block" onClick={() => changeView('sheet-preferences')}>Next</button>
                                 </div>
                             </div>
-                        </div>
                     )}
                 </div>
             </div>

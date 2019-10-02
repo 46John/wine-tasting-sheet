@@ -2,9 +2,17 @@ import React, {Component} from 'react';
 import { Page, Text, View, Document, StyleSheet, PDFDownloadLink, PDFViewer, Image, Font} from '@react-pdf/renderer';
 
 class SheetPreview extends Component{
+    state = {
+        loadFinished: false
+    }
     shouldComponentUpdate(){
         return true;
     }
+    setLoadStatus = () => {
+        this.setState({
+            loadFinished: true
+        });
+    };
     render(){
         const {
             selectedWines,
@@ -21,7 +29,7 @@ class SheetPreview extends Component{
         });
 
         Font.register({
-            family:'EB Garamond', src: '//fonts.gstatic.com/s/ebgaramond/v7/kYZt1bJ8UsGAPRGnkXPeFZ0EAVxt0G0biEntp43Qt6E.ttf'
+            family:'EB Garamond', src: 'https://fonts.gstatic.com/s/ebgaramond/v7/kYZt1bJ8UsGAPRGnkXPeFZ0EAVxt0G0biEntp43Qt6E.ttf'
         });
 
         const tastingSheet = (
@@ -153,9 +161,20 @@ class SheetPreview extends Component{
                     <div className="view-instructions">
                         <h2>Tasting Sheet Preview</h2>
                         <p>Below is a preview of your tasting sheet. If you need to make any changes, click the back button.</p>
-                        <PDFDownloadLink document={tastingSheet} fileName="StSupery-Tasting-Sheet.pdf" className="d-block d-lg-none">
-                            {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Download now!')}
-                        </PDFDownloadLink>
+                        
+                            <PDFDownloadLink document={tastingSheet} fileName="StSupery-Tasting-Sheet.pdf" className="d-block d-lg-none">
+                                {({ blob, url, loading, error }) => {
+                                    if(loading){
+                                        return 'Loading document...';
+                                    }else{
+                                        if(!this.state.loadFinished){
+                                            this.setLoadStatus();
+                                        }
+                                        return 'Download Now!';
+                                    }
+                                }}
+                            </PDFDownloadLink>
+                        
                         <div className="controls">
                             <button className="back-button button-large" onClick={() => changeView('sheet-preferences')}>Back</button>
                         </div>
@@ -165,9 +184,11 @@ class SheetPreview extends Component{
 
                 </div>
                 <div className="col-12 d-none d-lg-flex">
-                <PDFViewer width="100%" height="800px">
-                    {tastingSheet}
-                </PDFViewer>
+                {this.state.loadFinished && (
+                    <PDFViewer width="100%" height="800px">
+                        {tastingSheet}
+                    </PDFViewer>
+                )}
                 </div>
             </div>
         )
