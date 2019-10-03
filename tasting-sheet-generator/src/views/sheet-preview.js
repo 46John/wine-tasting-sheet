@@ -162,7 +162,7 @@ class SheetPreview extends Component{
                         <h2>Tasting Sheet Preview</h2>
                         <p>Below is a preview of your tasting sheet. If you need to make any changes, click the back button.</p>
                         
-                            <PDFDownloadLink document={tastingSheet} fileName="StSupery-Tasting-Sheet.pdf" className="d-block d-lg-none">
+                            <PDFDownloadLink document={tastingSheet} fileName="StSupery-Tasting-Sheet.pdf" className="d-block d-lg-none" target="_blank">
                                 {({ blob, url, loading, error }) => {
                                     if(loading){
                                         return 'Loading document...';

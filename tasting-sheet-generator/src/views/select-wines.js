@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 import ListWines from '../list-wines';
 
 class SelectWines extends Component{
-
+    componentDidMount(){
+        window.scrollTo(0, 0);
+    }
     render(){
         const {
             allWines,

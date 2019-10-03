@@ -130,6 +130,7 @@ class App extends Component {
         }
     }
     componentDidMount(){
+      
         // let apiUrl = "/wines";
         // fetch(apiUrl)
         //     .then(response => response.json())
@@ -147,7 +148,8 @@ class App extends Component {
         });
         this.setState({
           totalNumWines
-      })
+        });
+      
     };
     onDragOver = (ev) => {
         ev.preventDefault();
