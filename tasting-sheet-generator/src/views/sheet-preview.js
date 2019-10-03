@@ -22,7 +22,7 @@ class SheetPreview extends Component{
         } = this.props;
 
         Font.register({
-            family:'Roboto Condensed', src: 'http://localhost:3000/fonts/RobotoCondensed-Regular.ttf'
+            family:'Roboto Condensed', src: '/fonts/RobotoCondensed-Regular.ttf'
         });
         Font.register({
             family:'EB Garamond Bold', src: '/fonts/ebgaramond-bold-webfont.ttf', fontWeight: 'bold'
