@@ -26,7 +26,7 @@ class SelectWines extends Component{
                 <div className="col-12">
                     <div className="view-instructions">
                         <h1 className="page-title">Tasting Sheet Creator</h1>
-                        <p>Using the list below, select the wines you would like to appear in your tasting sheet. You can rearrange you list of selected wines by dragging and dropping them into your preferred order (desktop only).</p>
+                        <p>Using the list below, select the wines you would like to appear in your tasting sheet.</p>
                     </div>
                 </div>
                 <div className="col-12">
