@@ -1,6 +1,15 @@
 import React, {Component} from 'react';
 
 class SheetPreferences extends Component{
+    state = {
+        time : ""
+    }
+    updateStateTime = (val) => {
+        this.setState({
+            time : val
+        });
+        console.log(val);
+    }
     componentDidMount(){
         window.scrollTo(0, 0);
     }
@@ -19,7 +28,6 @@ class SheetPreferences extends Component{
                 <div className="col-12">
                     <div className="view-instructions">
                         <h2>Tasting Sheet Options</h2>
-                        <p>Below are the wines you selected for your tasting sheet. If these are incorrect, or in the wrong order, please click the back button, and adjust the list accordingly. The retail price per bottle is shown by default, but these prices can be changed to fit your audience.</p>
                     </div>
                 </div>
                 <div className="col-12">
@@ -145,11 +153,12 @@ class SheetPreferences extends Component{
                                         <label htmlFor="eventTime">Event Time</label>
                                         <input
                                             type="time"
+                                            pattern="[0-9]{2}:[0-9]{2}"
                                             className="form-control"
                                             id="eventTime"
                                             aria-describedby="eventTime"
                                             value={eventInfo.eventTime}
-                                            onChange={(e) => onChangeUpdateEventInfo(e.target.value, "eventTime")}
+                                            onChange={(e) => {onChangeUpdateEventInfo(e.target.value, "eventTime")}}
                                         />
                                     </div>
                                     <div className="form-group">

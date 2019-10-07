@@ -13,6 +13,18 @@ class SheetPreview extends Component{
             loadFinished: true
         });
     };
+
+    formatTime = (time) => {
+        let formattedTime = [];
+        let unformattedTime = time.split(":");
+        if(unformattedTime[0] > 12){
+            formattedTime[0] = unformattedTime[0] - 12;
+        }else{
+            formattedTime[0] = unformattedTime[0];
+        }
+        formattedTime[1] = unformattedTime[1]
+        return formattedTime.join(':');
+    }
     render(){
         const {
             selectedWines,
@@ -75,7 +87,7 @@ class SheetPreview extends Component{
                                 width: "100%",
                                 flex: '0 1',
                                 fontSize: '12pt'
-                            }}>{eventInfo.eventDate}{eventInfo.eventTime !== '' ? ', ' + eventInfo.eventTime : ''}</Text>
+                            }}>{eventInfo.eventDate}{eventInfo.eventTime !== '' ? ', ' + this.formatTime(eventInfo.eventTime.toString()) : ''}</Text>
                         )}
                         {eventInfo.eventName !== '' && (
                             <Text style={{
@@ -160,7 +172,6 @@ class SheetPreview extends Component{
                 <div className="col-12">
                     <div className="view-instructions">
                         <h2>Tasting Sheet Preview</h2>
-                        <p>Below is a preview of your tasting sheet. If you need to make any changes, click the back button.</p>
                         
                             <PDFDownloadLink document={tastingSheet} fileName="StSupery-Tasting-Sheet.pdf" className="d-block d-lg-none" target="_blank">
                                 {({ blob, url, loading, error }) => {
