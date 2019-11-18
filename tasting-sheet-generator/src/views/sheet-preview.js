@@ -27,9 +27,9 @@ class SheetPreview extends Component{
     }
     render(){
         const {
-            selectedWines,
+            selectedProducts,
             eventInfo,
-            sheetIncludes,
+            sheetOptions,
             changeView
         } = this.props;
 
@@ -96,7 +96,7 @@ class SheetPreview extends Component{
                                 fontSize: '12pt'
                             }}>Presented by: {eventInfo.eventPresenter}</Text>
                         )}
-                        {sheetIncludes.info === true && (
+                        {sheetOptions.info === true && (
                             <View style={{
                                 width: "100%",
                                 flex: '0 1',
@@ -108,7 +108,7 @@ class SheetPreview extends Component{
                         )}
                     </View>
                     <View>
-                    {selectedWines.map((wine, index) => (
+                    {selectedProducts.map((wine, index) => (
                         <View key={index} style={{}} wrap={false}>
                             
                             <View style={{
@@ -120,24 +120,24 @@ class SheetPreview extends Component{
                             }}
                             
                             >
-                                {sheetIncludes.images && (
+                                {sheetOptions.images && (
                                     <View style={{display: 'flex'}}>
-                                        <Image src="img/wine-label.jpg" style={{height: 60, width: 90,  alignSelf: 'center'}} />
+                                        <Image src={`${wine.img}`} style={{height: 60, width: 90,  alignSelf: 'center'}} />
                                     </View>
                                 )}
                                 <View style={{display: 'flex', flexDirection: "column", flex: 1, paddingLeft: 10}} >
                                     <View style={{width: '100%', marginBottom: '5pt'}}>
-                                        <Text style={{fontSize: 16, fontWeight: 'bold', fontFamily: 'Roboto Condensed'}}>{wine.title}{sheetIncludes.price ? " - $" + wine.price : ""} (SRP)</Text>
+                                        <Text style={{fontSize: 16, fontWeight: 'bold', fontFamily: 'Roboto Condensed'}}>{wine.name}{sheetOptions.price ? " - $" + wine.customPrice : ""} (SRP)</Text>
                                     </View>
-                                        {sheetIncludes.notes && (
+                                        {sheetOptions.notes && (
                                             <View style={{fontSize: "14pt", marginBottom: 10}}>
                                                 <Text style={{fontWeight: '700', marginBottom: '2pt', fontFamily: 'EB Garamond Bold', fontSize: 12}}>Winemaker's Notes:</Text>
-                                                <Text >{wine.notes}</Text>
+                                                <Text >{wine.tastingNotes}</Text>
                                             </View>
 
                                         )}
                                     <View style={{display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', marginBottom: 10}}>
-                                        {sheetIncludes.ratings && (
+                                        {sheetOptions.ratings && (
                                                                                 
                                             wine.ratings.map((rating, index) => <View style={{display: "flex", flexDirection: "row", flexWrap: 'wrap', marginRight: 10}} key={index}>
                                                 <Text style={{width: '40pt', fontSize: 12, backgroundColor: '#962b2b', color: 'white', textAlign: 'center'}}>{rating.value}</Text>

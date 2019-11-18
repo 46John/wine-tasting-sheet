@@ -1,28 +1,28 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { setSelectedProductPrice } from '../actions/selectedProducts';
+import { updateEventInfo } from '../actions/eventInfo';
+import { setSheetOptions } from '../actions/sheetOptions';
+import CurrencyFormat from 'react-currency-format';
 
 class SheetPreferences extends Component{
-    state = {
-        time : ""
-    }
-    updateStateTime = (val) => {
-        this.setState({
-            time : val
-        });
-        console.log(val);
-    }
+
     componentDidMount(){
         window.scrollTo(0, 0);
     }
+
     render(){
         const {
-            selectedWines,
+            selectedProducts,
             changeView,
-            onChangePrice,
-            onChangeUpdateEventInfo,
+            setSelectedProductPrice,
+            setSheetOptions,
+            sheetOptions,
             eventInfo,
-            sheetIncludes,
-            toggleSheetInfo
+            updateEventInfo
         } = this.props;
+
         return(
             <div className="row">
                 <div className="col-12">
@@ -35,18 +35,25 @@ class SheetPreferences extends Component{
                         <thead>
                         <tr>
                             <th scope="col">Wine</th>
-                            <th scope="col" className="d-none d-lg-block">Rating(s)</th>
                             <th scope="col">Price (SRP)</th>
+                            <th scope="col">Custom Price</th>
                         </tr>
                         </thead>
                         <tbody>
-                        {selectedWines.map((wine, index) => (
+                        {selectedProducts.map((wine, index) => (
                             <tr key={index}>
-                                <td>{wine.title}</td>
-                                <td className="d-none d-lg-block">{wine.ratings.map((rating, index) => (
-                                    <span key={index}>{rating.value} - {rating.name} </span>
-                                ))}</td>
-                                <td>$ <input type="number" placeholder={wine.price} value={wine.price} onChange={(e) => onChangePrice(e,index)}/></td>
+                                <td>{wine.name}</td>
+                                <td>${wine.price}</td>
+                                <td>
+                                    <CurrencyFormat
+                                        placeholder={`$ ${wine.price}`}
+                                        prefix={'$'}
+                                        thousandSeparator={true}
+                                        allowNegative={false}
+                                        decimalScale="2"
+                                        fixedDecimalScale={true}
+                                        onBlur={(e) => setSelectedProductPrice(wine.id, e.target.value.slice(1))} />
+                                </td>
                             </tr>
                         ))}
                         </tbody>
@@ -66,8 +73,8 @@ class SheetPreferences extends Component{
                                                     type="checkbox"
                                                     className="form-check-input"
                                                     id="checkTastingNotes"
-                                                    onChange={()=>toggleSheetInfo("notes")}
-                                                    checked={sheetIncludes.notes === true ? true : false}
+                                                    onChange={()=> setSheetOptions("notes")}
+                                                    checked={sheetOptions.notes}
                                                 />
                                                 <label className="form-check-label" htmlFor="checkTastingNotes">Tasting
                                                     Notes</label>
@@ -79,8 +86,8 @@ class SheetPreferences extends Component{
                                                     type="checkbox"
                                                     className="form-check-input"
                                                     id="checkRatings"
-                                                    onChange={()=>toggleSheetInfo("ratings")}
-                                                    checked={sheetIncludes.ratings === true ? true : false}
+                                                    onChange={()=> setSheetOptions("ratings")}
+                                                    checked={sheetOptions.ratings}
                                                 />
                                                 <label className="form-check-label" htmlFor="checkRatings">Ratings</label>
                                             </div>
@@ -91,8 +98,8 @@ class SheetPreferences extends Component{
                                                     type="checkbox"
                                                     className="form-check-input"
                                                     id="checkPricing"
-                                                    onChange={()=>toggleSheetInfo("price")}
-                                                    checked={sheetIncludes.price === true ? true : false}
+                                                    onChange={()=>setSheetOptions("price")}
+                                                    checked={sheetOptions.price}
                                                 />
                                                 <label className="form-check-label" htmlFor="checkPricing">Pricing</label>
                                             </div>
@@ -103,8 +110,8 @@ class SheetPreferences extends Component{
                                                     type="checkbox"
                                                     className="form-check-input"
                                                     id="checkImages"
-                                                    onChange={()=>toggleSheetInfo("images")}
-                                                    checked={sheetIncludes.images === true ? true : false}
+                                                    onChange={()=>setSheetOptions("images")}
+                                                    checked={sheetOptions.images}
                                                 />
                                                 <label className="form-check-label" htmlFor="checkImages">Label
                                                     Images</label>
@@ -116,8 +123,8 @@ class SheetPreferences extends Component{
                                                     type="checkbox"
                                                     className="form-check-input"
                                                     id="checkWinery"
-                                                    onChange={()=>toggleSheetInfo("info")}
-                                                    checked={sheetIncludes.info === true ? true : false}
+                                                    onChange={()=>setSheetOptions("info")}
+                                                    checked={sheetOptions.info}
                                                 />
                                                 <label className="form-check-label" htmlFor="checkWinery">Winery
                                                     Info</label>
@@ -135,7 +142,7 @@ class SheetPreferences extends Component{
                                             id="eventName"
                                             aria-describedby="eventName"
                                             value={eventInfo.eventName}
-                                            onChange={(e) => onChangeUpdateEventInfo(e.target.value, "eventName")}
+                                            onChange={(e) => updateEventInfo("eventName", e.target.value)}
                                         />
                                     </div>
                                     <div className="form-group">
@@ -146,7 +153,7 @@ class SheetPreferences extends Component{
                                             id="eventDate"
                                             aria-describedby="eventDate"
                                             value={eventInfo.eventDate}
-                                            onChange={(e) => onChangeUpdateEventInfo(e.target.value, "eventDate")}
+                                            onChange={(e) => updateEventInfo("eventDate", e.target.value)}
                                         />
                                     </div>
                                     <div className="form-group">
@@ -158,7 +165,7 @@ class SheetPreferences extends Component{
                                             id="eventTime"
                                             aria-describedby="eventTime"
                                             value={eventInfo.eventTime}
-                                            onChange={(e) => {onChangeUpdateEventInfo(e.target.value, "eventTime")}}
+                                            onChange={(e) => {updateEventInfo("eventTime", e.target.value)}}
                                         />
                                     </div>
                                     <div className="form-group">
@@ -168,8 +175,8 @@ class SheetPreferences extends Component{
                                             className="form-control"
                                             id="eventVenue"
                                             aria-describedby="eventVenue"
-                                            value={eventInfo.eventVenue}
-                                            onChange={(e) => onChangeUpdateEventInfo(e.target.value, "eventVenue")}
+                                            value={eventInfo.eventVenu}
+                                            onChange={(e) => updateEventInfo("eventVenue", e.target.value)}
                                         />
                                     </div>
                                     <div className="form-group">
@@ -180,7 +187,7 @@ class SheetPreferences extends Component{
                                             id="eventPresenter"
                                             aria-describedby="eventPresenter"
                                             value={eventInfo.eventPresenter}
-                                            onChange={(e) => onChangeUpdateEventInfo(e.target.value, "eventPresenter")}
+                                            onChange={(e) => updateEventInfo("eventPresenter", e.target.value)}
                                         />
                                     </div>
                                 </div>
@@ -204,4 +211,23 @@ class SheetPreferences extends Component{
     }
 }
 
-export default SheetPreferences;
+const mapStateToProps = ({ selectedProducts, sheetOptions, eventInfo }) => {
+    return {
+        selectedProducts,
+        eventInfo,
+        sheetOptions,
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return bindActionCreators(
+        {
+            setSelectedProductPrice,
+            updateEventInfo,
+            setSheetOptions,
+        },
+        dispatch
+    );
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SheetPreferences);

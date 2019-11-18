@@ -1,24 +1,23 @@
 import React, {Component} from 'react';
-import ListWines from '../list-wines';
+import { connect } from 'react-redux';
+import ListWines from './list-wines';
+import { bindActionCreators } from 'redux';
+import {
+    removeSelectedProduct,
+    removeAllProducts,
+    reorderSelectedProduct,
+    addAllProducts,
+} from '../actions/selectedProducts';
 
 class SelectWines extends Component{
     componentDidMount(){
         window.scrollTo(0, 0);
     }
     render(){
+        console.log(this.props);
         const {
-            allWines,
-            selectedWines,
-            onDragStart,
-            addAllWines,
-            removeAllWines,
-            onDragOver,
-            onDrop,
-            dragReorderOver,
-            dragReorder,
-            removeFromList,
+            selectedProducts,
             changeView,
-            addToList,
             totalNumWines
         } = this.props;
         return(
@@ -30,57 +29,35 @@ class SelectWines extends Component{
                     </div>
                 </div>
                 <div className="col-12">
-                    <div className="row">
+                    <div className="row product-select-row">
                         <div className="col-12 col-lg-6 mb-4 mb-lg-0">
                             <div className="select-wrapper">
                                 <div className="select-header d-flex justify-content-between align-items-center">
                                     <h2>Available Wines</h2>
                                 </div>
-                                <ListWines wineList={allWines} fireDragStart={onDragStart} addToList={addToList}></ListWines>
-                                
-                            </div>
-                            {selectedWines.length !== totalNumWines && (
+                                <ListWines show="ALL" />
                                 <div className="select-controls text-right">
-                                    <button className="dark-gray-button d-inline-block" onClick={addAllWines}> Add All</button>
+                                    <button className="dark-gray-button d-inline-block" onClick={() => this.props.addAllProducts(this.props.allWines)}> Add All <i className="fa fa-plus"></i></button>
                                 </div>
-                            )}
+                            </div>
+
                         </div>
                         <div className="col-12 col-lg-6">
-                            <div className="selected-wrapper">
-                                <div className="selected-header d-flex justify-content-between align-items-center">
+                            <div className="select-wrapper">
+                                <div className="select-header d-flex justify-content-between align-items-center">
                                     <h2>Selected Wines</h2>
                                 </div>
-                                <div className="selectedWines" onDragOver={(e) => onDragOver(e)} onDrop={(e)=>{onDrop(e)}}>
-                                    {selectedWines.length === 0 &&(
-                                        <div className="selected-instructions d-flex justify-content-center align-items-center h-100">
-                                            <div className="text text-center">
-                                                <i className="fa fa-plus-square"></i>
-                                                <p>Selected wines will appear here.</p>
-                                            </div>
-                                        </div>
-                                    )}
-                                    <ul>
-                                        {selectedWines && selectedWines.map((wine,index)=>(
-                                            <li key={index} onDragOver={() => dragReorderOver(index)}>
-                                                <div draggable onDragStart={(e) => dragReorder(e, index, wine.id)} className="d-flex flex-row justify-content-start">
-                                                    <button className="remove" onClick={() => removeFromList(index, wine.id, wine.category)}>Remove</button>
-                                                    <span>{wine.title}</span>
-                                                </div>
-                                            </li>
-                                        ))}
-                                    </ul>
+                                <ListWines show="SELECTED"/>
+                                <div className="select-controls text-right">
+                                    <button className="dark-gray-button d-inline-block" onClick={() => this.props.removeAllProducts()}>
+                                        <i className="fa fa-times"></i> Remove All</button>
                                 </div>
-                                {selectedWines.length > 0 &&(
-                                    <div className="select-controls text-right">
-                                        <button className="dark-gray-button d-inline-block" onClick={removeAllWines}>Remove All</button>
-                                    </div>
-                                )}
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="controls text-right col-12">
-                    {selectedWines.length > 0 && (
+                    {selectedProducts.length > 0 && (
                             <div className="row">
                                 <div className="col-6 text-left">
 
@@ -95,4 +72,21 @@ class SelectWines extends Component{
         )
     }
 }
-export default SelectWines;
+
+const mapStateToProps = ({allWines, selectedProducts}) => {
+    return {
+        allWines,
+        selectedProducts
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return bindActionCreators({
+        removeSelectedProduct,
+        removeAllProducts,
+        reorderSelectedProduct,
+        addAllProducts,
+    }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SelectWines);

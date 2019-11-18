@@ -1,65 +1,72 @@
 .select-wrapper, .selected-wrapper{
   overflow: hidden;
-  .select-header, .selected-header{
-    margin-bottom: .5rem;
-    h2{
-      vertical-align: top;
-      font-size: 1.4rem;
-      font-weight: bold;
-      letter-spacing: 1px;
-      color: rgba(33, 33, 33, 0.79);
-    
+  .selectedProduct{
+    overflow: hidden;
+    &:first-child{
+      .reorder{
+        i:first-child{
+          pointer-events: none;
+          opacity: 0.2;
+        }
+      }
+    }
+    &:last-child{
+      .reorder{
+        i:last-child{
+          pointer-events: none;
+          opacity: 0.2;
+        }
+      }
+    }
+    .reorder{
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid #d6d6d6;
+      i{
+        padding: 8px 16px;
+        transition: background-color 100ms ease-in-out;
+        &:first-child{
+          border-bottom: 1px solid #d6d6d6;
+        }
+        &:hover {
+          background-color: #e4e2e2;
+          cursor: pointer;
+        }
+      }
+
+    }
+    .selectedProduct__remove{
+      padding: 8px;
+      cursor: pointer;
+      font-size: 24px;
+      color: #8c8d8c;
+      transition: color 100ms ease-in-out;
+      &:hover{
+        color: #a22f2f;
+      }
+
     }
   }
   .available-wines{
-    background: darken(#a5a0a0, 10%);
-    border: 1px solid darken($lightGray, 10%);
+    border: 2px solid #a5a0a0;
     padding: 15px 8px;
+    .disabled{
+
+    }
     h3{
       color: white;
       font-size: 1.2rem;
     }
   }
 }
-.select-controls{
-  width: 100%;
-  display: inline-block;
-  text-align: right;
-  vertical-align: top;
-  padding-top: 1rem;
-  .dark-gray-button{
-    background: #a5a0a0;
-    color: white;
-    border: 0;
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-weight: bold;
-    display: inline-block;
-    cursor: pointer;
-    font-size: .8rem;
-    &:hover{
-      background: darken(#a5a0a0,10%)
-    }
-  }
-}
+
 .selected-wrapper{
-  //.selected-header{
-  //  .controls{
-  //    .dark-gray-button{
-  //      background: #658a26;
-  //      &:hover{
-  //        background: darken(#658a26, 10%);
-  //      }
-  //    }
-  //  }
-  //}
   .selectedWines{
-    background: #4e4e4e;
-    border: 1px solid #4e4e4e;
+    border: 2px solid #a5a0a0;
     padding: 15px 8px;
     .selected-instructions{
       .text{
-        color: rgba(255, 255, 255, 0.64);
+        color: #a5a0a0;
         i{
           font-size: 5rem;
           margin-bottom: 1rem;
